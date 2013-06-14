@@ -1,0 +1,28 @@
+/*
+ * Twitthelp - Twitter helper extension - v 1.0
+ * Copyright (c) 2013 - Arpad Szucs (WhiteX)
+ * popup.css - TwittHelp Styles
+ */
+
+body {
+  width: 110px;
+  font-family: sans-serif;
+}
+
+h2.title {
+  font-size: 14px;
+}
+
+.counter p {
+  font-size: 12px;
+}
+.col-1,
+.col-2 {
+
+}
+.col-1 {
+
+}
+.col-2 {
+
+}

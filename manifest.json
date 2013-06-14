@@ -1,0 +1,25 @@
+{
+  "name": "Twitter helper",
+  "description": "This extension helps you to follow multiple users on twiter.",
+  "version": "1.0",
+  "background" : {
+    "scripts": ["background.js"]
+  },
+  "page_action" : {
+    "default_icon" : "icon-19.png",
+    "default_title" : "Twitthelp!",
+    "default_popup": "popup.html"
+  },
+   "content_scripts": [ {
+    "matches": [
+      "https://twitter.com/*"
+    ],
+    "js": [ "jquery-1.9.1.min.js", "contentscript.js" ]
+   } ],
+  "icons" : {
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  },
+  "permissions": [ "tabs", "*://*/*" ],
+  "manifest_version": 2
+}
