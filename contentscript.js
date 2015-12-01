@@ -68,7 +68,7 @@ function selectUsers() {
       return  '<span style="background: ' + hlColor + '">'+ match + '</span>';
   };
 
-  $('.stream-item .content .bio')
+  $('.ProfileCard-bio')
     //.filter(":contains('designer')")
     .filter(function() {
         if (!$(this).hasClass('twitthelp-processed')) {
@@ -95,7 +95,7 @@ function clickSelectedUsers() {
     console.log('Time between clicks : ' + delaySec);
 
     $('body').animate({
-      scrollTop: $(this).offset().top - 100
+      scrollTop: $(this).offset().top - 200
     }, delaySec, function(){
       //animation complete
 

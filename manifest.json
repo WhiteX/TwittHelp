@@ -1,7 +1,7 @@
 {
   "name": "Twitter helper",
   "description": "This extension helps you to follow multiple users on twiter.",
-  "version": "1.0",
+  "version": "1.1",
   "background" : {
     "scripts": ["background.js"]
   },
