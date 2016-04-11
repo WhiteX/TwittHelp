@@ -1,5 +1,5 @@
 /*
- * Twitthelp - Twitter helper extension - v 1.0
+ * Twitthelp - Twitter helper extension - v 1.3
  * Copyright (c) 2013 - Arpad Szucs (WhiteX)
  * popup.js - Handles the interaction with the popup
  * Library that helps to manage the communication between the Chrome.PageAction Popup and Background Page
@@ -27,8 +27,10 @@ $( document ).ready(function() {
     chrome.tabs.getSelected(null, function(tab) {
       var popupPort = chrome.tabs.connect(tab.id, {name: "controlPopup"});
       if (button == 'select') {
+        // Trigger Auto Click after selecting users
         $('.click-button').delay(1000).click();
-        console.log('no miva');
+        console.log('Click triggeed automatically - popup.js - clickHandler');
+        // Auto Clcik - END
         popupPort.postMessage({whichButtonWasClicked: "select-button"});
       } else if (button == 'click') {
         popupPort.postMessage({whichButtonWasClicked: "click-button"});

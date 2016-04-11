@@ -1,5 +1,5 @@
 /*
- * Twitthelp - Twitter helper extension - v 1.0
+ * Twitthelp - Twitter helper extension - v 1.3
  * Copyright (c) 2013 - Arpad Szucs (WhiteX)
  * background.js - extension initializer - always loads
  */
