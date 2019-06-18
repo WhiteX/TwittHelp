@@ -42,10 +42,10 @@ function selectUsers() {
 
   // select every follower
   var keyWords = RegExp (['/(web design|web designer|app design|app development)|(graphic design|designer|illustrator)|(logo|branding)|'
-                          ,'(web developer|frontend developer|frontend|development|programmer)|(user interface|usability|ui designer|ux)|'
+                          ,'(web developer|frontend developer|frontend|programmer)|(user interface|usability|ui designer|ux)|'
                           ,'(html5|html)|(css3|css)|(php|laravel|javascript|jquery)|(angular|react)|(backend|coder)|'
                           ,'(photograpy|photographer)|(3d modelling|3d|3d artist|digital painting)|'
-                          ,'(freelance)|(founder|co-founder)/'].join(''), "igm");
+                          ,'(founder|co-founder)/'].join(''), "igm");
 
   function higlighter (match, p1, p2, p3, offset, string) {
     switch(match) {
